@@ -1,0 +1,56 @@
+body{
+    text-align: center;
+    background-image: url(Imagens/OIG2.jpeg);
+    background-position: center center;
+    
+   }
+
+.nome{
+   text-align: center;
+   background-color:rgba(167, 192, 246, 0.195);
+    
+}
+
+.sobreolim{
+   text-align: center;
+background-color: rgba(176, 198, 240, 0.648);
+border-radius: 50px;
+
+}
+fieldset{
+   display: block;
+   background-color: rgba(240, 248, 255, 0.74);
+   border-radius: 50px;
+
+}
+.perguntas1{
+   text-align: center;
+   border: 2px solid rgba(0, 0, 0, 0.322)
+   relative; top: 20px; left: 20px;
+   text-align: center;
+   
+}
+.botaoVoltar {
+    border-radius: 50px;
+   
+    text-align: left;
+}
+.bProximo{
+   border-radius: 50px;
+   text-align: right;
+}
+.botaoRodar{
+   border-radius: 50px;
+}
+.logo{ border-radius: 50px;
+   width: 20%;
+}
+.resul{
+   background-color: rgba(249, 247, 247, 0.716);
+}
+.saida{
+   background-color: aliceblue;
+}
+.meu-link{
+   background-color: rgba(240, 248, 255, 0.622);
+}
