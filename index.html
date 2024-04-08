@@ -24,3 +24,69 @@
         oitava vez que o Brasil sediou um grande evento multiesportivo.</h3><!--pequeno texto falando do começo das olimpidas-->
         <a class="meu-link" href="https://pt.wikipedia.org/wiki/Jogos_Ol%C3%ADmpicos_de_Ver%C3%A3o_de_2016">https://pt.wikipedia.org</a>
       </div>
+      <fieldset>
+        <button class="botaoVoltar" onclick="questaoanterior()">voltar</button><!--botão de voltar a pergunta anterior-->
+    
+       <!--criação de um formulario onde sera inserido as perguntas e alternativas que a pessoa vai selecionar-->
+        <div class="muda" id="Q1">
+          <label class="Lperguntas" id="questao1">
+            <h3>Quantos medalhas de ouro ao todo o
+              <select class="respostas" name="Respostas" id="pe1">
+                <option value="opção1">Brasil</option>
+                <option value="opção2">Estados Unidos</option>
+                <option value="opção3">Japão</option>
+                <option value="opção4">Coreia do Sul</option>
+              </select>ganhou nas olimpiadas de 2016.
+            </h3>
+          </label>
+        </div>
+        <div class="muda" id="Q2">
+          <label class="Lperguntas" id="questao2">
+            <h3>Quantas medalhas de ouro o 
+              <select class="respostas" name="Respostas" id="pe2">
+                <option value="opção5">Thiago Braz</option>
+                <option value="opção6">Frdric Roger</option>
+                <option value="opção7">Danielle</option>
+                <option value="opção8">Michael Phelps</option>
+              </select> ganhou na olimpida de 2016.
+            </h3>
+          </label>
+        </div>
+        <div class="muda" id="Q3">
+          <label class="Lperguntas" id="questao3">
+            <h3>Quantas medalhas de ouro as mulheres ganharam nos difrentes esportes na olimpiada de 2016.
+              <select class="respostas" name="Respostas" id="pe3">
+                <option value="opção9">Futebol</option>
+                <option value="opção10">Volei</option>
+                <option value="opção11">Ginasticas Ritmica</option>
+                <option value="opção12">Tenis</option>
+              </select>
+            </h3>
+          </label>
+        </div>
+        <div class="muda" id="Q4">
+          <label class="Lperguntas" id="questao4">
+            <h3>Total de medalhas de ouro entre o sexo feminino e masculino na olimpiada de 2016.
+              <select class="respostas" name="Respostas" id="pe4">
+                <option value="opção13">Feminino</option>
+                <option value="opção14">Masculino</option>
+              </select>
+            </h3>
+          </label>
+        </div>
+        <div class="muda" id="Q5">
+          <label class="Lperguntas" id="questao5">
+            <h3>Quantas participações o 
+              <select class="respostas" name="Respostas" id="pe5">
+                <option value="opção17">salvador</option>
+                <option value="opção18">aracaju</option>
+                <option value="opção19">rio</option>
+                <option value="opção20">sao paulo</option>
+              </select> teve na olimpiada de 2016.
+            </h3>
+          </label>
+    
+        </div>
+        <div id="processarLinhas"></div>
+        <button class="bProximo" onclick="proximaquestao()">Proximo</button><!--botão de proxima questão-->
+      </fieldset>
