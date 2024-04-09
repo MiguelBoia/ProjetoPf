@@ -4,16 +4,14 @@ const verificaResposta = () => {
     const selecaorespo = document.querySelector(".respostas");
     const opcaoselecionada = selecaorespo.options[selecaorespo.selectedIndex].value;//traz as pergunta e ver qual opçao foi selecionada
     const respostaSelecionada = document.getElementById("respostaSelecionada");//leva a resposta para a saida que vai ser exibida na pagina
-    console.log("selecaorespo: ", selecaorespo)
-    console.log("opcaoselecionada: ", opcaoselecionada)
-    console.log("respostaSelecionada: ", respostaSelecionada)
+    
 
     const pegarCSV = () => {
-        // Certifica o caminho para o arquivo CSV é correto
+        
         const url = 'src/athlete_events.csv';
 
         return fetch(url)
-            .then(response => response.text())
+            .then(response => response.text())//converte a resposta
             .then(resultado => {
                 // Papa.parse() analisa o CSV em um array de objetos JavaScript
                 const resultados = Papa.parse(resultado, { header: true }).data;
@@ -175,7 +173,7 @@ const verificaResposta = () => {
     };
 
     pegarCSV().then(resultado => {
-        if (resultado !== null) {
+        if (resultado !== null) { //observa para ver se os dados estão certos para apresentar o resultado
             respostaSelecionada.textContent = `Resultado: ${resultado}`;
         } else {
             respostaSelecionada.textContent = 'Opção inválida ou erro ao processar.';
